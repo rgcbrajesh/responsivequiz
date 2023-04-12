@@ -1,0 +1,174 @@
+#showname {
+  font-size: 45px;
+  color: white;
+}
+#cssbu {
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+#a1 {
+  font-size: 30px;
+  color: white;
+}
+li {
+  margin-left: 50px;
+}
+#submit {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(250, 100, 46);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+}
+#submit:hover {
+  background-color: black;
+  color: orangered;
+}
+#answer {
+  height: 40px;
+  width: 150px;
+}
+
+#name {
+  border: aqua solid;
+  height: 30px;
+}
+button {
+  height: 50px;
+  width: 90px;
+  background-color: silver;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#container {
+  background-color: black;
+  border: solid white 4px;
+  width: 500px;
+  height: fit-content !important;
+  float: left;
+  border-radius: 20px;
+}
+#a2 {
+  color: white;
+}
+#submit:hover {
+  animation: shake 0.2s 2;
+}
+#anim2 {
+  height: 300px;
+  width: 500px;
+  margin-bottom: 200px;
+}
+@keyframes shake {
+  25% {
+    translate: 6px 0;
+  }
+  50% {
+    translate: -6px 0;
+  }
+  75% {
+    translate: 6px 0;
+  }
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #222;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#04a2f4, #007de7);
+  clip-path: circle(30% at left 70%);
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#007de7, #262d37);
+  clip-path: circle(20% at right 10%);
+}
+.logindiv {
+  /*    
+    border: solid white 3px; */
+  margin-left: 5vh;
+  width: 400px;
+  height: 250px;
+}
+#nameenter {
+  color: white;
+  font-size: 40px;
+}
+#anim {
+  height: 300px;
+  width: 300px;
+
+  margin-top: 20px;
+  margin-left: 50px;
+}
+#submit1 {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(246, 67, 7);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+}
+#submit1:hover {
+  background-color: black;
+  color: orangered;
+}
+#submit1:hover {
+  animation: shake 0.2s 2;
+}
+@keyframes shake {
+  25% {
+    translate: 6px 0;
+  }
+  50% {
+    translate: -6px 0;
+  }
+  75% {
+    translate: 6px 0;
+  }
+}
+
+#skale {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(234, 69, 58);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+  transition: 1s, ease;
+}
+#score {
+  color: rgb(239, 26, 26);
+  margin-left: 10px;
+}
+#marks {
+  color: red;
+}

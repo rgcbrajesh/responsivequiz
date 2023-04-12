@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Categary</title>
+    <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="media.css">
+  
+  </head>
+  <body>
+    <div  id="catdiv">
+    <h1
+      id="showname"
+      style="text-transform: uppercase; text-align: center"
+    ></h1>
+    <center>
+      <a href="htmlquiz.html.html"
+        ><button  id="skale">
+          <b>HTML</b>
+        </button></a
+      >
+      <a href="cssquiz.html"
+        ><button id="skale">
+          <b>CSS</b>
+        </button>
+        <br /><br
+      /></a>
+        <a href="java1.html"> <button id="skale" style="width:fit-content;">
+          <b>JAVASCRIPT</b>
+        </button></a>
+     </div>
+    </center>
+  </body>
+</html>
+<script>
+  document.getElementById("showname").innerHTML =
+    "WELCOME  " +
+    localStorage.getItem("name") +
+    "  PLEASE SELECT </br> YOUR CATEGORY";
+</script>

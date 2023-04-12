@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Quiz</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="pagemedia.css" />
+  </head>
+
+  <body>
+    <div id="container" style="width: 500px; height: 430px; float: left">
+      <center>
+        <h1 id="a1">
+          Which HTML tag is used to define an internal style sheet?
+        </h1>
+      </center>
+      <h2 id="a2">
+        <ol>
+          <li id="1">CSS</li>
+          <li id="2">style</li>
+          <li id="3">Script</li>
+        </ol>
+        <center>
+          <h3 id="resultenter" style="font-size: 30px">
+            Please Enter Your Answer Number
+          </h3>
+        </center>
+      </h2>
+      <center>
+        <input type="text" id="answer" />
+        <br /><br />
+        <table border="0" style="width: 200px">
+          <tr>
+            <td>
+              <a href="cssquiz.html" style="color: white">
+                <b style="font-size: 30px; width: 100px">< </b></a
+              >
+            </td>
+            <td style="text-align: center">
+              <button id="submit" onclick="submit()">Submit</button>
+            </td>
+            <td style="font-size: 30px">
+              <a href="warning.html" style="color: white"><b> ></b></a>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </div>
+  </body>
+</html>
+<script>
+  document.getElementById("showname").innerHTML =
+    "WELCOME  " + localStorage.getItem("name");
+
+  function submit() {
+    var rightanswer = parseInt(document.getElementById("answer").value);
+    var answer = 2;
+    if (answer == rightanswer) {
+      document.getElementById("resultenter").innerHTML = "Answer Is Write";
+      document.getElementById("resultenter").style.color = "#7dfa7a";
+    } else {
+      document.getElementById("resultenter").innerHTML = "Answer Is Wrong";
+      document.getElementById("resultenter").style.color = "#FF0000";
+    }
+  }
+</script>

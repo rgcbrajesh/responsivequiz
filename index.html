@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta http-equiv="refresh" content="10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Login</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="media.css">
+   
+    
+  </head>
+  
+  <body bgcolor="">
+   
+
+    <div class="logindiv" >
+      <h1 style="text-align: center" id="nameenter"><b><i> PLEASE ENTER <br> YOUR NAME</i></b></h1>
+      
+        <form action="category.html">
+          <center>
+        <input type="text" id="name" style="text-transform:uppercase;" /> <br /><br /><br />
+        <a href="category.html" style="text-decoration: none;"><button  id="submit1" onclick="submitname()"> 
+          <b>SUBMIT</b></a></center></button>
+        </form>
+         
+    </div>
+       
+  </body>
+</html>
+<script>
+  function submitname() {
+    var name = document.getElementById("name").value;
+    localStorage.setItem("name",name);
+    return false ;
+    
+  }
+</script>

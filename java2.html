@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript Quiz2</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="pagemedia.css" />
+  </head>
+
+  <body>
+    <div id="container" style="width: 500px; height: 430px; float: left">
+      <center>
+        <h1 id="a1">How do you Create a function in javascript ?</h1>
+      </center>
+
+      <h2 id="a2">
+        <ol>
+          <li id="1">Function myfunction()</li>
+          <li id="2">Function:myfunction()</li>
+          <li id="3">Function =myfunction</li>
+        </ol>
+        <center>
+          <h3 id="resultenter">Please Enter Your Answer Number</h3>
+        </center>
+      </h2>
+      <center>
+        <input type="text" id="answer" />
+        <br /><br />
+        <table border="0" style="width: 200px">
+          <tr>
+            <td>
+              <a href="java1.html" style="color: white">
+                <b style="font-size: 30px; width: 100px">< </b></a
+              >
+            </td>
+            <td style="text-align: center">
+              <button id="submit" onclick="submit()">Submit</button>
+            </td>
+            <td style="font-size: 30px">
+              <a href="warning.html" style="color: white"><b> ></b></a>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </div>
+    <!-- <div style="float: right; margin-right: 100px">
+      <img src="e593ab0589d5f1b389e4dfbcce2bce20.gif" id="anim2" />
+    </div> -->
+  </body>
+</html>
+<script>
+  document.getElementById("showname").innerHTML =
+    "WELCOME  " + localStorage.getItem("name");
+
+  function submit() {
+    var rightanswer = parseInt(document.getElementById("answer").value);
+    var answer = 1;
+    if (answer == rightanswer) {
+      document.getElementById("resultenter").innerHTML = "Answer Is Write";
+      document.getElementById("resultenter").style.color = "#7dfa7a";
+    } else {
+      document.getElementById("resultenter").innerHTML = "Answer Is Wrong";
+      document.getElementById("resultenter").style.color = "#FF0000";
+    }
+  }
+</script>

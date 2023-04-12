@@ -1,0 +1,20 @@
+@media screen and (max-width: 400px) {
+  body {
+    background-color: rgb(13, 8, 8) !important;
+  }
+  body::after {
+    background: none !important;
+  }
+  body::before {
+    background: none !important ;
+  }
+  #container {
+    border: solid rgb(232, 220, 239) 3px;
+    width: 350px !important;
+    background-color: rgb(5, 5, 5);
+    height: fit-content !important;
+  }
+  #a2 {
+    margin-left: 0px !important ;
+  }
+}
